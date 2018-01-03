@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.jnosql.artemins</groupId>
+    <artifactId>artemis-demo-workshop1</artifactId>
+    <name>Artemis Demo using Java SE Graph-neo4j</name>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--STEP 1-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compile.targetLevel>1.8</maven.compile.targetLevel>
+        <maven.compile.sourceLevel>1.8</maven.compile.sourceLevel>
+        <tinkerpop.version>3.3.0</tinkerpop.version>
+        <artemis.version>0.0.4-SNAPSHOT</artemis.version>
+        <javax.json.version>1.1</javax.json.version>
+        <json.b.version>1.0</json.b.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se-shaded</artifactId>
+            <version>3.0.1.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>${javax.json.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jnosql.artemis</groupId>
+            <artifactId>graph-extension</artifactId>
+            <version>${artemis.version}</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.apache.tinkerpop</groupId>
+            <artifactId>neo4j-gremlin</artifactId>
+            <version>${tinkerpop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-tinkerpop-api-impl</artifactId>
+            <version>0.6-3.2.2</version>
+        </dependency>
+
+
+<!-- DEPENDENCIES FOR GRAPH??
+
+        <dependency>
+            <groupId>org.jnosql.artemis</groupId>
+            <artifactId>graph-extension</artifactId>
+            <version>${artemis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tinkerpop</groupId>
+            <artifactId>neo4j-gremlin</artifactId>
+            <version>${tinkerpop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tinkerpop</groupId>
+            <artifactId>gremlin-core</artifactId>
+            <version>${tinkerpop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-tinkerpop-api-impl</artifactId>
+            <version>0.6-3.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+            <version>3.2.3</version>
+        </dependency>
+        -->
+
+
+<!--NEO4J CONECTION-->
+
+        <!--
+
+        <dependency>
+            <groupId>javax.json</groupId>
+            <artifactId>javax.json-api</artifactId>
+            <version>${javax.json.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.json.bind</groupId>
+            <artifactId>javax.json.bind-api</artifactId>
+            <version>${json.b.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse</groupId>
+            <artifactId>yasson</artifactId>
+            <version>${json.b.version}</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.jnosql.artemis</groupId>
+            <artifactId>graph-extension</artifactId>
+            <version>${artemis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tinkerpop</groupId>
+            <artifactId>gremlin-core</artifactId>
+            <version>${tinkerpop.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.steelbridgelabs.oss</groupId>
+            <artifactId>neo4j-gremlin-bolt</artifactId>
+            <version>0.2.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j.driver</groupId>
+            <artifactId>neo4j-java-driver</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+        -->
+
+    </dependencies>
+
+
+    <repositories>
+        <repository>
+            <id>snapshots-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
